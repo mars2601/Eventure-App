@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html id="page">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+        <title>Hello World</title>
+    </head>
+    <body>
+
+      <script type="text/x-handlebars">
+        <div class="header page mobile-header">
+          <header class="header__container layout--flush">
+                  <a id="left-menu" hraf="#left-menu" class="showMenu header__border-link header__link layout__item three-twelfths">
+                    <span class="icon-list">
+                  </a><!--
+              --><h1 class="header__title layout__item six-twelfths"><a href="index.html" class="header__link">Eventure</a></h1><!--
+              --><a id="right-menu" hraf="#right-menu" class="showMenu header__border-link header__link layout__item three-twelfths">
+                  <span class="icon-user">
+                </a>
+          </header>
+        </div>
+          <!-- off side menu -->
+          <div id="remote-left-menu" style="display:none;">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-list--item">{{#link-to 'nowEvents'}}Evénement en cours{{/link-to}}</li>
+                <li class="navigation-list--item">{{#link-to 'addEvent'}}Créer un événement{{/link-to}}</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="remote-right-menu" style="display:none;">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-list--item">{{#link-to 'profil'}}Mon profil{{/link-to}}</li>
+              </ul>
+            </nav>
+          </div>
+          <!-- off side menu END -->
+          <div class="wrapper">
+            {{outlet}}
+          </div>
+      </script>
+
+      <script type="text/x-handlebars" id="profil">
+        <h1>Mon profil</h1>
+      </script>
+
+      <script type="text/x-handlebars" id="nowEvents">
+        <h1>Evenements en cours</h1>
+      </script>
+
+      <script type="text/x-handlebars" id="addEvent">
+        <h1>Ajouter des événements </h1>
+      </script>
+        <script src="js/libs/handlebars-v2.0.0.js"></script>
+        <script src="js/libs/ember-1.9.1.js"></script>
+        <script src="js/libs/jquery.sidr.min.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+        <script src="js/libs/jquery.hammer.js"></script>
+        <script src="js/min/app-min.js"></script>
+
+
+        <script src="js/libs/side-bar-menu.js"></script>
+
+
+    </body>
+</html>

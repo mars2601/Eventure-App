@@ -1,0 +1,424 @@
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+/*------------------------------------*\
+    #Colors
+\*------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-xyg1p9");
+  src: url("../fonts/icomoon.eot?#iefix-xyg1p9") format("embedded-opentype"), url("../fonts/icomoon.woff?-xyg1p9") format("woff"), url("../fonts/icomoon.ttf?-xyg1p9") format("truetype"), url("../fonts/icomoon.svg?-xyg1p9#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-user:before {
+  content: "\e600"; }
+
+.icon-list:before {
+  content: "\e601"; }
+
+/*------------------------------------*\
+    #WRAPPER
+\*------------------------------------*/
+/**
+ * A simple abstraction for making equal-width navigation wrapper.
+ */
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%; }
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+/**
+ * Begin a layout group.
+ */
+.layout {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -24px; }
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.layout__item {
+  display: inline-block;
+  /* [1] */
+  padding-left: 24px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */
+  -webkit-box-sizing: border-box;
+  /* [5] */
+  -moz-box-sizing: border-box;
+  /* [5] */
+  box-sizing: border-box;
+  /* [5] */ }
+
+/**
+ * Layouts with tiny gutters.
+ */
+.layout--tiny {
+  margin-left: -quarter(24px); }
+  .layout--tiny > .layout__item {
+    padding-left: quarter(24px); }
+
+/**
+ * Layouts with small gutters.
+ */
+.layout--small {
+  margin-left: -halve(24px); }
+  .layout--small > .layout__item {
+    padding-left: halve(24px); }
+
+/**
+ * Layouts with large gutters.
+ */
+.layout--large {
+  margin-left: -double(24px); }
+  .layout--large > .layout__item {
+    padding-left: double(24px); }
+
+/**
+ * Layouts with huge gutters.
+ */
+.layout--huge {
+  margin-left: -quadruple(24px); }
+  .layout--huge > .layout__item {
+    padding-left: quadruple(24px); }
+
+/**
+ * Layouts with no gutters.
+ */
+.layout--flush {
+  margin-left: 0; }
+  .layout--flush > .layout__item {
+    padding-left: 0; }
+
+/**
+ * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your
+ * markup will display in order 4, 3, 2, 1 on your page.
+ */
+.layout--rev {
+  direction: rtl;
+  text-align: left; }
+  .layout--rev > .layout__item {
+    direction: ltr;
+    text-align: left; }
+
+/**
+ * Align layout items to the vertical centers of each other.
+ */
+.layout--middle > .layout__item {
+  vertical-align: middle; }
+
+/**
+ * Align layout items to the vertical bottoms of each other.
+ */
+.layout--bottom > .layout__item {
+  vertical-align: bottom; }
+
+/**
+ * Make the layout items fill up from the right hand side.
+ */
+.layout--right {
+  text-align: right; }
+  .layout--right > .layout__item {
+    text-align: left; }
+
+/**
+ * Make the layout items fill up from the center outward.
+ */
+.layout--center {
+  text-align: center; }
+  .layout--center > .layout__item {
+    text-align: left; }
+
+/**
+ * Cause layout items to take up a non-explicit amount of width.
+ */
+.layout--auto > .layout__item {
+  width: auto; }
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+.header__container {
+  background: #BC322E;
+  border-bottom: 1px solid #3D67A3; }
+.header__title {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  padding-top: 0px;
+  padding-top: 0rem; }
+.header__link {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0;
+  padding: 8px 8px 6px;
+  padding: 0.8rem 0.8rem 0.6rem; }
+.header__border-link {
+  padding: 10px 0px 6px;
+  padding: 1rem 0rem 0.6rem;
+  text-align: center;
+  font-size: 1.3em; }
+.header__border-link:first-child {
+  font-size: 1.6em;
+  padding: 9px 0px 6px;
+  padding: 0.9rem 0rem 0.6rem; }
+
+.sidr {
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 260px;
+  overflow-x: none;
+  overflow-y: auto;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 15px;
+  background: #801411;
+  color: #3D67A3;
+  -webkit-box-shadow: inset -3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset -3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -3px 3px 3px 0px rgba(0, 0, 0, 0.5); }
+
+.sidr .sidr-inner {
+  padding: 0 0 15px; }
+
+.sidr .sidr-inner > p {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.sidr.right {
+  left: auto;
+  right: -260px; }
+
+.sidr.left {
+  left: -260px;
+  right: auto; }
+
+.sidr ul {
+  padding: 0;
+  margin: 0; }
+  .sidr ul li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #3D67A3; }
+    .sidr ul li a {
+      display: block;
+      color: #FFF;
+      padding: 0 20px;
+      text-decoration: none;
+      line-height: 57px;
+      height: 57px; }
+
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+  background: #3D67A3; }
+  .sidr ul li:hover a, .sidr ul li.active a, .sidr ul li.sidr-class-active a {
+    color: #F3F3F3; }
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+.navigation {
+  background: #000; }
+  .navigation__list--item a {
+    text-decoration: none;
+    color: white; }
+
+/*------------------------------------*\
+    #WRAPPER
+\*------------------------------------*/
+/**
+ * A simple abstraction for making equal-width navigation wrapper.
+ */
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%; }
+
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
+ */
+/**
+ * Whole.
+ */
+.one-whole {
+  width: 100% !important; }
+
+/**
+ * Halves.
+ */
+.one-half,
+.two-quarters,
+.three-sixths,
+.four-eighths,
+.five-tenths,
+.six-twelfths {
+  width: 50% !important; }
+
+/**
+ * Thirds.
+ */
+.one-third,
+.two-sixths,
+.three-ninths,
+.four-twelfths {
+  width: 33.3333333% !important; }
+
+.two-thirds,
+.four-sixths,
+.six-ninths,
+.eight-twelfths {
+  width: 66.6666666% !important; }
+
+/**
+ * Quarters.
+ */
+.one-quarter,
+.two-eighths,
+.three-twelfths {
+  width: 25% !important; }
+
+.three-quarters,
+.six-eighths,
+.nine-twelfths {
+  width: 75% !important; }
+
+/**
+ * Fifths.
+ */
+.one-fifth,
+.two-tenths {
+  width: 20% !important; }
+
+.two-fifths,
+.four-tenths {
+  width: 40% !important; }
+
+.three-fifths,
+.six-tenths {
+  width: 60% !important; }
+
+.four-fifths,
+.eight-tenths {
+  width: 80% !important; }
+
+/**
+ * Sixths.
+ */
+.one-sixth,
+.two-twelfths {
+  width: 16.6666666% !important; }
+
+.five-sixths,
+.ten-twelfths {
+  width: 83.3333333% !important; }
+
+/**
+ * Eighths.
+ */
+.one-eighth {
+  width: 12.5% !important; }
+
+.three-eighths {
+  width: 37.5% !important; }
+
+.five-eighths {
+  width: 62.5% !important; }
+
+.seven-eighths {
+  width: 87.5% !important; }
+
+/**
+ * Ninths.
+ */
+.one-ninth {
+  width: 11.1111111% !important; }
+
+.two-ninths {
+  width: 22.2222222% !important; }
+
+.four-ninths {
+  width: 44.4444444% !important; }
+
+.five-ninths {
+  width: 55.5555555% !important; }
+
+.seven-ninths {
+  width: 77.7777777% !important; }
+
+.eight-ninths {
+  width: 88.8888888% !important; }
+
+/**
+ * Tenths.
+ */
+.one-tenth {
+  width: 10% !important; }
+
+.three-tenths {
+  width: 30% !important; }
+
+.seven-tenths {
+  width: 70% !important; }
+
+.nine-tenths {
+  width: 90% !important; }
+
+/**
+ * Twelfths.
+ */
+.one-twelfth {
+  width: 8.3333333% !important; }
+
+.five-twelfths {
+  width: 41.6666666% !important; }
+
+.seven-twelfths {
+  width: 58.3333333% !important; }
+
+.eleven-twelfths {
+  width: 91.6666666% !important; }
+
+body {
+  font-family: 'Roboto', sans-serif; }

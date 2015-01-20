@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'apt-get' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose config Skipping project config: /Users/pirnaymarcel/.npmrc. (matches userconfig)
+5 verbose cache add [ 'apt-get', null ]
+6 verbose cache add name=undefined spec="apt-get" args=["apt-get",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'apt-get',
+7 verbose parsed url   path: 'apt-get',
+7 verbose parsed url   href: 'apt-get' }
+8 silly lockFile d9ea7dbd-apt-get apt-get
+9 verbose lock apt-get /Users/pirnaymarcel/.npm/d9ea7dbd-apt-get.lock
+10 silly lockFile d9ea7dbd-apt-get apt-get
+11 silly lockFile d9ea7dbd-apt-get apt-get
+12 verbose addNamed [ 'apt-get', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 5c95a559-apt-get apt-get@
+15 verbose lock apt-get@ /Users/pirnaymarcel/.npm/5c95a559-apt-get.lock
+16 silly addNameRange { name: 'apt-get', range: '*', hasData: false }
+17 verbose request where is /apt-get
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id a7df5199d11607b7
+20 verbose url raw /apt-get
+21 verbose url resolving [ 'https://registry.npmjs.org/', './apt-get' ]
+22 verbose url resolved https://registry.npmjs.org/apt-get
+23 verbose request where is https://registry.npmjs.org/apt-get
+24 info trying registry request attempt 1 at 20:12:00
+25 http GET https://registry.npmjs.org/apt-get
+26 http 200 https://registry.npmjs.org/apt-get
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Thu, 08 Jan 2015 19:12:00 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"6FPCDLW7AJ28MO2T0FFIN3A9L"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '3822',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-lhr6323-LHR',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1420744320.556498,VS0,VE352',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'apt-get', range: '*', hasData: true }
+29 silly addNameRange versions [ 'apt-get', [ '0.0.1', '0.0.2', '0.1.0' ] ]
+30 verbose addNamed [ 'apt-get', '0.1.0' ]
+31 verbose addNamed [ '0.1.0', '0.1.0' ]
+32 silly lockFile e1f8d580-apt-get-0-1-0 apt-get@0.1.0
+33 verbose lock apt-get@0.1.0 /Users/pirnaymarcel/.npm/e1f8d580-apt-get-0-1-0.lock
+34 silly lockFile 966acecc-js-org-apt-get-apt-get-0-1-0-tgz https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+35 verbose lock https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz /Users/pirnaymarcel/.npm/966acecc-js-org-apt-get-apt-get-0-1-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz',
+36 verbose addRemoteTarball   '6bea420038faca0365097b4eaef0c06b327991ca' ]
+37 info retry fetch attempt 1 at 20:12:01
+38 verbose fetch to= /tmp/npm-8410-B7GGWf0V/registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+39 http GET https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+40 http 200 https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+41 silly lockFile 966acecc-js-org-apt-get-apt-get-0-1-0-tgz https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+42 silly lockFile 966acecc-js-org-apt-get-apt-get-0-1-0-tgz https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz
+43 silly lockFile e1f8d580-apt-get-0-1-0 apt-get@0.1.0
+44 silly lockFile e1f8d580-apt-get-0-1-0 apt-get@0.1.0
+45 silly lockFile 5c95a559-apt-get apt-get@
+46 silly lockFile 5c95a559-apt-get apt-get@
+47 silly resolved [ { name: 'apt-get',
+47 silly resolved     version: '0.1.0',
+47 silly resolved     private: false,
+47 silly resolved     homepage: 'https://github.com/Holusion/node-apt-get',
+47 silly resolved     keywords: [ 'apt', 'apt-get', 'update', 'upgrade', 'debian', 'ubuntu' ],
+47 silly resolved     author:
+47 silly resolved      { name: 'Sebastien Dumetz',
+47 silly resolved        email: 's.dumetz@holusion.com',
+47 silly resolved        url: 'https://github.com/klepthys' },
+47 silly resolved     contributors: [ [Object], [Object] ],
+47 silly resolved     scripts:
+47 silly resolved      { start: 'NODE_ENV=development ./node_modules/.bin/supervisor app.js',
+47 silly resolved        test: 'mocha --reporter spec' },
+47 silly resolved     main: 'index.js',
+47 silly resolved     os: [ 'linux' ],
+47 silly resolved     devDependencies: { mocha: '*', chai: '*', rewire: '*' },
+47 silly resolved     description: '',
+47 silly resolved     _id: 'apt-get@0.1.0',
+47 silly resolved     dist:
+47 silly resolved      { shasum: '6bea420038faca0365097b4eaef0c06b327991ca',
+47 silly resolved        tarball: 'http://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz' },
+47 silly resolved     _from: 'apt-get@',
+47 silly resolved     _npmVersion: '1.4.3',
+47 silly resolved     _npmUser: { name: 'klepthys', email: 's.dumetz@holusion.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _shasum: '6bea420038faca0365097b4eaef0c06b327991ca',
+47 silly resolved     _resolved: 'https://registry.npmjs.org/apt-get/-/apt-get-0.1.0.tgz' } ]
+48 info install apt-get@0.1.0 into /Users/pirnaymarcel
+49 info installOne apt-get@0.1.0
+50 error notsup Unsupported
+50 error notsup Not compatible with your operating system or architecture: apt-get@0.1.0
+50 error notsup Valid OS:    linux
+50 error notsup Valid Arch:  any
+50 error notsup Actual OS:   darwin
+50 error notsup Actual Arch: x64
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "apt-get"
+53 error cwd /Users/pirnaymarcel/Sites/testEventure/test
+54 error node -v v0.10.35
+55 error npm -v 1.4.28
+56 error code EBADPLATFORM
+57 verbose exit [ 1, true ]
